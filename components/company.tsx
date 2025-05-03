@@ -12,17 +12,17 @@ export default function Company() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
             <div className="font-semibold text-gray-700">所在地</div>
-            <div className="md:col-span-3">東京都文京区</div>
+            <div className="md:col-span-3">〒152-0002 東京都渋谷区渋谷2-19-15 宮益坂ビルディング609</div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
             <div className="font-semibold text-gray-700">代表者</div>
-            <div className="md:col-span-3">代表取締役</div>
+            <div className="md:col-span-3">代表取締役CEO 飯田 夏生</div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
             <div className="font-semibold text-gray-700">設立</div>
-            <div className="md:col-span-3">2023年</div>
+            <div className="md:col-span-3">2025年2月</div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 py-4">

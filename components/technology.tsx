@@ -12,13 +12,26 @@ import {
   DialogClose,
 } from "@/components/ui/dialog"
 
-const technologies = [
+type Technology = {
+  id: string
+  icon: React.ReactNode
+  title: string
+  description: string
+  image: string
+  details: {
+    title: string
+    description: string
+    features: string[]
+  }
+}
+
+const technologies: Technology[] = [
   {
     id: "edge-llm",
     icon: <Cpu className="h-8 w-8 text-emerald-600" />,
-    title: "Edge + LLM 制御",
-    description: "多規格 I/O を Pi ベースで即席ブリッジ。LLM が装置コマンドを⾃動生成〈開発中〉",
-    image: "/placeholder.svg?height=400&width=600",
+    title: "エッジデバイス + LLM 装置制御コマンド生成",
+    description: "多様な実験機器に対応したエッジデバイスと LLM による装置コマンドを⾃動生成で〈開発中〉",
+    image: "/edge-device.png?height=400&width=600",
     details: {
       title: "Edge + LLM 制御システム",
       description:
@@ -35,9 +48,9 @@ const technologies = [
   {
     id: "3d-layout",
     icon: <VectorSquare className="h-8 w-8 text-emerald-600" />,
-    title: "3Dレイアウト&動線最適化",
-    description: "研究室の CAD を AI がインポートし、数分で衝突ゼロ提案〈開発中〉",
-    image: "/placeholder.svg?height=400&width=600",
+    title: "3Dモデルとレイアウト生成 + 動線最適化",
+    description: "ラボ内の実験機器やロボット CAD を AI がインポートし、レイアウトを提案〈開発中〉",
+    image: "/simulation.png?height=400&width=600",
     details: {
       title: "3Dレイアウト&動線最適化システム",
       description:
@@ -54,9 +67,9 @@ const technologies = [
   {
     id: "gpt-parse",
     icon: <Database className="h-8 w-8 text-emerald-600" />,
-    title: "GPTパース + NoSQL",
-    description: "紙・Excel・画像を JSON 化し、検索・可視化 API を即提供〈開発中〉",
-    image: "/placeholder.svg?height=400&width=600",
+    title: "生成AIによる実験ノートなどの研究データの構造化",
+    description: "紙・Excel・画像を生成AIにより構造化を行う〈開発中〉",
+    image: "/gpt-structured.png?height=400&width=600",
     details: {
       title: "GPTパース + NoSQLシステム",
       description:
@@ -73,7 +86,7 @@ const technologies = [
 ]
 
 export default function Technology() {
-  const [selectedTech, setSelectedTech] = useState(null)
+  const [selectedTech, setSelectedTech] = useState<Technology | null>(null)
 
   return (
     <section id="technology" className="py-20 bg-white">

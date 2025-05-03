@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
-            KIBAN
+            <Image src="/logo_black.png" alt="logo" width={120} height={80} />
           </Link>
 
           {/* Desktop Navigation */}

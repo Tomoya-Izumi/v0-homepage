@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { FlaskRoundIcon as Flask, BotIcon as Robot } from "lucide-react"
+import Image from "next/image"
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -24,18 +25,22 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-16"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=1080&width=1920')",
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero-background.jpg?height=720&width=1920')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "grayscale(100%)",
       }}
     >
       <div className="container mx-auto px-4 py-20" style={{ filter: "none" }}>
+
         <div
           className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
+          <div className="flex justify-center mb-12">
+            <Image src="/logo_white.png" alt="hero-background" width={640} height={120} />
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             物理世界にAIのイノベーションをもたらす。
           </h1>
@@ -53,16 +58,6 @@ export default function Hero() {
               <Robot className="h-6 w-6 text-emerald-400" />
               <p className="text-lg">多様な実験機器を AI で自律協調させる。</p>
             </div>
-          </div>
-
-          <div className="mt-10">
-            <Button
-              onClick={scrollToContact}
-              size="lg"
-              className="text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700 text-white"
-            >
-              お問い合わせ（3営業日以内に返信）
-            </Button>
           </div>
         </div>
       </div>

@@ -4,22 +4,22 @@ import { Card, CardContent } from "@/components/ui/card"
 const teamMembers = [
   {
     image: "/placeholder.svg?height=300&width=300",
-    name: "CEO / 情報系AI起業家",
-    description: "金融・保険AIプロジェクト歴10件超",
+    name: "CEO / 飯田 夏生",
+    description: "東京大学情報理工学系研究科所属。ソフトウェアエンジニアに従事後、2023年にAIスタートアップを創業。会社経営・ソフトウェア開発・上場企業とのAI開発の推進などをこれまで経験。2025年にKIBANを創業。",
     icon: <UserCircle className="h-5 w-5 text-emerald-600" />,
   },
   {
     image: "/placeholder.svg?height=300&width=300",
-    name: "CTO / 化学系学生",
+    name: "氏名",
     description: "有機合成×データサイエンスの研究者",
     icon: <GraduationCap className="h-5 w-5 text-emerald-600" />,
   },
-  {
-    image: "/placeholder.svg?height=300&width=300",
-    name: "顧問 / 東京大学 教授",
-    description: "ラボオートメーション研究 20年",
-    icon: <GraduationCap className="h-5 w-5 text-emerald-600" />,
-  },
+  // {
+  //   image: "/placeholder.svg?height=300&width=300",
+  //   name: "顧問 / 東京大学 教授",
+  //   description: "ラボオートメーション研究 20年",
+  //   icon: <GraduationCap className="h-5 w-5 text-emerald-600" />,
+  // },
 ]
 
 export default function Team() {
