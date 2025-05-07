@@ -9,9 +9,9 @@ const teamMembers = [
     icon: <UserCircle className="h-5 w-5 text-emerald-600" />,
   },
   {
-    image: "/placeholder.svg?height=300&width=300",
-    name: "氏名",
-    description: "有機合成×データサイエンスの研究者",
+    image: "/izumi.jpg?height=300&width=300",
+    name: "和泉 智也",
+    description: "東京大学理学系研究科所属。電池研究を専門とし、無機分析化学、固体物理、電気化学、計算科学など幅広い分野を学ぶ。2023年度 東京大学理学部化学科 卒業論文発表学科長賞受賞。2024年10月、統合物質・情報国際卓越大学院コース生採用。",
     icon: <GraduationCap className="h-5 w-5 text-emerald-600" />,
   },
   // {
