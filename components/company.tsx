@@ -17,7 +17,7 @@ export default function Company() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
             <div className="font-semibold text-gray-700">代表者</div>
-            <div className="md:col-span-3">代表取締役CEO 飯田 夏生</div>
+            <div className="md:col-span-3">CEO 飯田 夏生</div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
