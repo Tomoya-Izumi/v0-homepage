@@ -10,7 +10,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">株式会社KIBAN</h3>
             <p className="text-gray-400 mb-2">〒152-0002</p>
             <p className="text-gray-400 mb-2">東京都渋谷区渋谷2-19-15 宮益坂ビルディング609</p>
-            <p className="text-gray-400">設立：2025年2月</p>
+            <p className="text-gray-400">設立：2026年2月</p>
           </div>
 
           <div>
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-          <p>© 2025 KIBAN, Inc.</p>
+          <p>© 2026 KIBAN, Inc.</p>
         </div>
       </div>
     </footer>
