@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 const teamMembers = [
   {
     image: "/natsuo-iida.jpeg?height=300&width=300",
-    name: "CEO / 飯田 夏生",
+    name: "飯田 夏生",
     description: "東京大学情報理工学系研究科所属。ソフトウェアエンジニアに従事後、2023年にAIスタートアップを創業。会社経営・ソフトウェア開発・上場企業とのAI開発の推進などをこれまで経験。2026年に株式会社KIBANを共同創業。",
     icon: <UserCircle className="h-5 w-5 text-emerald-600" />,
   },
