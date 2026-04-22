@@ -29,12 +29,19 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // ここで実際のフォーム送信処理を行う
-    // 例: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(formState) })
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      })
 
-    // 送信完了を模擬（実際の実装では適切なエラーハンドリングを行う）
-    setTimeout(() => {
-      setIsSubmitting(false)
+      if (!response.ok) {
+        throw new Error('送信に失敗しました')
+      }
+
       setIsSubmitted(true)
       setFormState({
         company: "",
@@ -43,7 +50,12 @@ export default function Contact() {
         phone: "",
         message: "",
       })
-    }, 1000)
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert('送信に失敗しました。もう一度お試しください。')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
