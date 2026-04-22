@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'KIBAN お問い合わせ <onboarding@resend.dev>',
+      from: 'KIBAN お問い合わせ <contact@mail.kibantech.com>',
       to: ['tomoya-izumi@kibantech.com'],
       subject: `【KIBAN】お問い合わせ: ${name}様`,
       html: `
