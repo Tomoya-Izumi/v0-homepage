@@ -12,7 +12,7 @@ export default function Company() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
             <div className="font-semibold text-gray-700">所在地</div>
-            <div className="md:col-span-3">〒152-0002 東京都渋谷区渋谷2-19-15 宮益坂ビルディング609</div>
+            <div className="md:col-span-3">〒150-0043 東京都渋谷区道玄坂１丁目１０番８号渋谷道玄坂東急ビル２Ｆ－Ｃ</div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-gray-200 py-4">
